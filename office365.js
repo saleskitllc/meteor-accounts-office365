@@ -1,10 +1,10 @@
 /* globals Office365 */
-
+/* eslint-disable */
 Accounts.oauth.registerService('office365');
 
 if (Meteor.isClient) {
   const loginWithOffice365 = function(options, callback) {
-    if (! callback && typeof options === 'function') {
+    if (!callback && typeof options === 'function') {
       callback = options;
       options = null;
     }
@@ -20,6 +20,6 @@ if (Meteor.isClient) {
 } else {
   Accounts.addAutopublishFields({
     forLoggedInUser: ['services.office365'],
-    forOtherUsers: ['services.office365.mail']
+    forOtherUsers: ['services.office365.mail'],
   });
 }
