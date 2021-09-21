@@ -1,14 +1,14 @@
 /* eslint-disable */
 Package.describe({
   name: 'ermlab:accounts-office365',
-  version: '0.2.0',
+  version: '0.3.1',
   summary: 'Login service for Microsoft Office 365 accounts',
   git: 'https://github.com/lindoelio/meteor-accounts-office365',
   documentation: 'README.md',
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.5.1');
+  api.versionsFrom('2.3');
 
   api.use('ecmascript');
 
